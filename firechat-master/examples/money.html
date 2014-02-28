@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Money Messenger</title>
+<meta name="description" content="app, dashboard, money, messenger, jforex">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/app.v1.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/font.css" cache="false">
+<script src="js/jquery-2.0.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/ie/respond.min.js" cache="false"></script><script src="js/ie/html5.js" cache="false"></script><script src="js/ie/fix.js" cache="false"></script>
+<style type="text/css">
+html, body {
+  overflow: hidden;
+}
+</style>
+    
+</head>
+<body class="">
+<section class="hbox stretch"> 
+  
+  <!-- .vbox -->
+  <section id="content">
+    <section class="vbox">
+      <header class="header bg-white b-b"> <img id="logo" alt="MoneyMessengerLogo" src="images/logo2.png"/>
+        <div  id="myMessenger"> <img class="userThumb" src="images/avatar.jpg"/>
+          <p class="userName">Meraj Faheem</p>
+          <!-- <img class="dropIcon" src="images/dropDown.png"/>-->
+          <div class="pull-right text-success m-t-sm"> <i class="icon-circle" id="statusUser"></i> </div>
+          <p id="status">Available</p>
+        </div>
+        <div id="dropDown">
+          <ul id="topMenu">
+            <li id="myProfile" style="border:none"><i class="icon-user"></i>&nbspMy Profile</li>
+            <li id="mysubscription"><i class="icon-pushpin"></i>&nbspMy Subscription</li>
+            <li id="addClients"><i class="icon-group"></i>&nbspAdd Client</li>
+            <li id="manageClients"><i class="icon-cogs"></i>&nbspManage Clients</li>
+            <li id="linkAccounts"><i class="icon-tasks"></i>&nbspLink Accounts</li>
+            <li id="alertHistory"><i class="icon-calendar"></i>&nbspAlert History</li>
+            <li id="settings"><i class="icon-gear"></i>&nbspSettings</li>
+            <li id="logOut"><i class="icon-power-off"></i>&nbspLog Out</li>
+          </ul>
+        </div>
+      </header>
+      <section class="wrapper" style="padding:0px;">
+        <div class="row">
+          <div class="col-lg-3">
+            <section class="panel" id="panelLeft">
+              <header class="panel-heading">
+                <div class="input-group text-sm">
+                  <input type="text" placeholder="Search" class="input-sm form-control" id="searchBox">
+                  <img src="images/cross.png" alt="clear" id="clear">
+                  <div class="input-group-btn">
+                    <button data-toggle="dropdown" class="btn btn-sm btn-white dropdown-toggle" type="button"> Status <span class="caret"></span> </button>
+                    <ul class="dropdown-menu pull-right">
+                      <li> <a href="#">Available</a> </li>
+                      <li> <a href="#">Busy</a> </li>
+                      <li> <a href="#">Away</a> </li>
+                      <li> <a href="#">idle</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </header>
+              <div id="accordion2" class="panel-group m-b">
+                <div class="panel" id="chatPanel">
+                  <div class="panel-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"> Users </a> </div>
+                  <div class="panel-collapse in" id="collapseOne" >
+                    <ul class="list-group alt">
+                      <!--user starts here-->
+                      <li class="list-group-item">
+                        <div class="media"> <span class="pull-left thumb-sm"><img src="images/aleem.jpg" alt="Aleem" width="90" height="90" class="img-circle"></span>
+                          <div class="pull-right text-success m-t-sm"> <i class="icon-circle"></i> </div>
+                          <div class="media-body">
+                            <div> <a href="#">Syed Aleem </a> </div>
+                            <small class="text-muted">Available</small> </div>
+                        </div>
+                      </li>
+                      <!--user starts here-->
+                      <li class="list-group-item">
+                        <div class="media"> <span class="pull-left thumb-sm"><a href="images/06.jpg"><img src="images/06.jpg" alt="Ehtesham" width="90" height="90" border="0" class="img-circle"></a></span>
+                          <div class="pull-right text-muted m-t-sm"> <i class="icon-circle"></i> </div>
+                          <div class="media-body">
+                            <div> <a href="#">Ehtesham</a> </div>
+                            <small class="text-muted">3 days ago</small> </div>
+                        </div>
+                      </li>
+                      <!--user starts here-->
+                      <li class="list-group-item">
+                        <div class="media"> <span class="pull-left thumb-sm"><img src="images/01.jpg" alt="John said" width="90" height="90" class="img-circle"></span>
+                          <div class="pull-right text-warning m-t-sm"> <i class="icon-circle"></i> </div>
+                          <div class="media-body">
+                            <div> <a href="#">Dan Doorack</a> </div>
+                            <small class="text-muted">about 2 hours ago</small> </div>
+                        </div>
+                      </li>
+                      <!--user starts here-->
+                      <li class="list-group-item">
+                        <div class="media"> <span class="pull-left thumb-sm"><img class="img-circle" alt="John said" src="images/avatar_default.jpg"></span>
+                          <div class="pull-right text-danger m-t-sm"> <i class="icon-circle"></i> </div>
+                          <div class="media-body">
+                            <div> <a href="#">Lauren Taylor</a> </div>
+                            <small class="text-muted">Busy</small> </div>
+                        </div>
+                      </li>
+                      <!--user starts here-->
+                      <li class="list-group-item">
+                        <div class="media"> <span class="pull-left thumb-sm"><img src="images/05.jpg" alt="John said" width="90" height="90" class="img-circle"></span>
+                          <div class="pull-right text-success m-t-sm"> <i class="icon-circle"></i> </div>
+                          <div class="media-body">
+                            <div> <a href="#">Ikramuddin</a> </div>
+                            <small class="text-muted">Available</small> </div>
+                        </div>
+                      </li>
+                      <!--user starts here-->
+                      <li class="list-group-item">
+                        <div class="media"> <span class="pull-left thumb-sm"><img src="images/04.jpg" alt="John said" width="90" height="90" class="img-circle"></span>
+                          <div class="pull-right text-success m-t-sm"> <i class="icon-circle"></i> </div>
+                          <div class="media-body">
+                            <div> <a href="#">Chris Fox </a> </div>
+                            <small class="text-muted">Available</small> </div>
+                        </div>
+                      </li>
+                      <!--user starts here-->
+                      <li class="list-group-item">
+                        <div class="media"> <span class="pull-left thumb-sm"><img src="images/03.jpg" alt="John said" width="90" height="90" class="img-circle"></span>
+                          <div class="pull-right text-success m-t-sm"> <i class="icon-circle"></i> </div>
+                          <div class="media-body">
+                            <div> <a href="#">Vamshi</a> </div>
+                            <small class="text-muted">Available</small> </div>
+                        </div>
+                      </li>
+                      <!--user starts here-->
+                      <li class="list-group-item">
+                        <div class="media"> <span class="pull-left thumb-sm"><img class="img-circle" alt="John said" src="images/avatar_default.jpg"></span>
+                          <div class="pull-right text-success m-t-sm"> <i class="icon-circle"></i> </div>
+                          <div class="media-body">
+                            <div> <a href="#">Nick</a> </div>
+                            <small class="text-muted">Available</small> </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="panel-heading"> <a href="#collapseTwo" data-parent="#accordion3" data-toggle="collapse" class="accordion-toggle collapsed"> Groups </a> </div>
+                  <div class="panel-collapse collapse" id="collapseTwo" >
+                    <div class="panel-body text-sm"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="panel-heading"> <a href="#collapseThree" data-parent="#accordion4" data-toggle="collapse" class="accordion-toggle collapsed"> Alert Panel </a> </div>
+                  <div class="panel-collapse in" id="collapseThree" > 
+                    <!--Alert panel components start here-->
+                    <div class="panel-body text-sm">
+                      <table width="259" border="0">
+                        <tr>
+                          <td width="51"><label>
+                            <input name="radiobutton" type="radio" value="radiobutton">
+                            Buy </label></td>
+                          <td width="57"><label>Symbol </label></td>
+                          <td width="58"><input type="text" class="txtField" name="textfield2"></td>
+                          <td width="75"><label>TP</label>
+                              <input type="text" class="txtField" name="textfield22"></td>
+                        </tr>
+                        <tr>
+                          <td><label>
+                            <input name="radiobutton" type="radio" value="radiobutton">
+                            Sell</label></td>
+                          <td><label>Quantity </label></td>
+                          <td><input type="text" class="txtField" name="textfield2"></td>
+                          <td><lable>
+                            <label>SL</label>
+                            <input type="text" class="txtField" name="textfield222"></td>
+                        </tr>
+                        <tr>
+                          <td colspan="4"><label>
+                            Market
+                            <input name="radiobutton" type="radio" value="radiobutton">
+                          </label>                            <label> Limit
+                            <input name="radiobutton" type="radio" value="radiobutton">
+                                                      </label>                          <label> Stop
+                            <input name="radiobutton" type="radio" value="radiobutton">
+                                                    </label></td>
+                        </tr>
+                        <tr>
+                          <td colspan="4"><div id="textAreaWrapper">
+      <textarea></textarea>
+    </div></td>
+                        </tr>
+                        <tr>
+                          <td height="48" colspan="4">Also Send 
+                            <label>
+                            Email
+                            <input type="checkbox" name="checkbox" value="checkbox">
+                          SMS
+                            <input type="checkbox" name="checkbox2" value="checkbox">
+                          </label>  
+                              <input type="button" value="send" id="sendButton"/></td>
+                        </tr>
+                        <tr>
+                          <td height="22" colspan="4"><img src="images/facebook.png" alt="facebook" width="35" height="35"> <img src="images/googleplus.png" alt="google+" width="35" height="35"> <img src="images/twitter.png" alt="twitter" width="35" height="35"> </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--Alert panel components end here--> 
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-lg-9" style="padding-left: 0px;">
+            <section class="panel" style="min-height:380px; margin:10px 0">
+              <header class="panel-heading bg-light">
+                <ul class="nav nav-tabs nav-justified">
+                  <li class="active"> <a data-toggle="tab" href="#chart"> <i class="icon-bar-chart text-default"></i> Charts</a> </li>
+                  <li> <a data-toggle="tab" href="#news"> <i class="icon-list-alt text-default"></i> News</a> </li>
+                </ul>
+              </header>
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div id="chart" class="tab-pane active">
+          <script type="text/javascript">DukascopyApplet = {"type":"chart","params":{"showUI":true,"showParameterToolbar":true,"showAdditionalToolbar":true,"allowInstrumentChange":true,"allowPeriodChange":true,"allowOfferSideChange":true,"showDetachButton":true,"presentationType":"candle","axisX":true,"axisY":true,"legend":true,"timeline":true,"showDateSeparators":true,"theme":"Pastelle","availableInstruments":"AUD/USD,EUR/USD,GBP/USD,NZD/USD,USD/CAD,USD/CHF,USD/JPY,USD/NOK,USD/SEK,USD/SGD,XAG/USD,XAU/USD,AUD/CAD,AUD/CHF,AUD/JPY,AUD/NZD,CAD/CHF,CAD/JPY,CHF/JPY,EUR/AUD,EUR/CAD,EUR/CHF,EUR/DKK,EUR/GBP,EUR/HKD,EUR/JPY,EUR/NOK,EUR/NZD,EUR/SEK,GBP/AUD,GBP/CAD,GBP/CHF,GBP/JPY,GBP/NZD,NZD/CAD,NZD/CHF,NZD/JPY,AUD/SGD,CAD/HKD,CHF/SGD,EUR/PLN,EUR/SGD,EUR/TRY,HKD/JPY,SGD/JPY,USD/DKK,USD/HKD,USD/MXN,USD/PLN,USD/RUB,USD/TRY,USD/ZAR","instrument":"EURUSD","period":"5","offerSide":"BID","timezone":0,"live":true,"panLock":false,"width":"100%","height":"450px","adv":"popup"}};</script><script type="text/javascript" src="//freeserv.dukascopy.com/2.0/core.js"></script>
+          </div>
+                  <div id="news" class="tab-pane"> News Will be displayed here </div>
+                </div>
+              </div>
+            </section>
+            <!--Chat Bar starts here-->
+            <section class="panel" style="min-height:250px">
+              <header class="panel-heading bg-light">
+                <ul class="nav nav-tabs nav-justified">
+                  <li class="active" id="chatHead"> <a data-toggle="tab" href="#chat"> <i class="icon-comments text-default"></i> Chat</a> </li>
+                  <li> <a data-toggle="tab" href="#others"> <i class="icon-list-alt text-default"></i> Others</a> </li>
+                </ul>
+              </header>
+              <div class="panel-body">
+                <div class="tab-content"> 
+                  <!--Chat components start here-->
+                  <div id="chat" class="tab-pane active">
+                    <section class="panel">
+                      <header class="panel-heading bg-light">
+                        <ul class="nav nav-tabs nav-justified" id="tabHead">
+                          <li class="active"> <a data-toggle="tab" href="#user_one"> <i class="text-success icon-circle text-default"></i> Chris Fox<i class="icon-remove pull-right" id="iconRemove"></i></a></li>
+                        </ul>
+                      </header>
+                      <div class="panel-body">
+                        <div class="tab-content" id="tabContentArea">
+                          <div id="user_one" class="tab-pane active"> </div>
+                          <!--simply wonderful start-->
+                       
+                          <!--simply wonderful ends-->
+                        </div>
+                      </div>
+                      <!--Input component start-->
+                      <article id="chat-form" class="chat-item"> <a class="pull-left thumb-sm avatar"><img class="img-circle" src="images/avatar.jpg"></a>
+                        <section class="chat-body">
+                          <form class="m-b-none" action="#">
+                            <div class="input-group">
+                              <input type="text" placeholder="Say something" class="form-control">
+                              <span class="input-group-btn">
+                              <button type="button" class="btn btn-info"> SEND </button>
+                              </span> </div>
+                          </form>
+                        </section>
+                      </article>
+                      <!----> 
+                    </section>
+                  </div>
+                  <!--Chat components end here-->
+                  <div id="others" class="tab-pane">Others panel</div>
+                </div>
+              </div>
+            </section>
+            <!--Chat panel ends here--> 
+            
+          </div>
+        </div>
+      </section>
+    </section>
+    <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="body"></a> </section>
+  <!-- /.vbox --> 
+</section>
+<a href="http://www.dukascopy.com/ad.php?ap=free1&tp=/" target="_blank"><img border="0" src="http://freeserv.dukascopy.com/advert/adControl.php"></a><br/>Dukascopy. Swiss <a target="_blank" href="http://www.dukascopy.com">forex broker</a> offers highest liquidity and marketplace for electronic forex <a target="_blank" href="http://www.dukascopy.com/swiss/english/forex/dealstation/">trading</a>
+<script src="css/app.v1.js"></script> 
+<!-- Bootstrap --> 
+<!-- Sparkline Chart --> 
+<!-- App -->
+</body>
+</html>
